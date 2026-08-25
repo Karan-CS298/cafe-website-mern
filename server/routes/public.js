@@ -1,0 +1,1 @@
+import {Router} from 'express'; import * as c from '../controllers/public.js'; const r=Router(); r.get('/cafe',c.cafe); r.get('/categories',c.categories); r.get('/products',c.products); r.get('/products/best-sellers',c.best); r.get('/menu',c.menu); r.get('/features',c.features); r.get('/about',c.about); export default r;

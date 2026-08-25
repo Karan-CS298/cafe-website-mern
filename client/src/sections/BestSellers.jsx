@@ -1,0 +1,5 @@
+import { useCafe } from '../context/CafeContext';
+import SectionHeading from '../components/SectionHeading';
+import ProductCard from '../components/ProductCard';
+
+export default function BestSellers(){const {data}=useCafe();return <section id="best-sellers" className="relative overflow-hidden bg-cream px-5 py-28 md:px-8 md:py-36"><div className="absolute -right-40 top-20 h-96 w-96 rounded-full bg-gold/10 blur-3xl"/><div className="relative mx-auto max-w-7xl"><SectionHeading eyebrow="The favourites" title="The ones guests come back for." description="A short edit of the cafe favourites — brewed, plated and finished with the same attention we give every order."/><div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">{data.best.map((p,i)=><ProductCard key={p._id} product={p} settings={data.settings} delay={i*.08}/>)}</div>{!data.best.length&&<div className="mt-12 rounded-[2rem] border border-dashed border-espresso/15 p-12 text-center text-sm text-espresso/45">Best sellers will appear here soon.</div>}</div></section>}

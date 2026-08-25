@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{font-family:Manrope,system-ui,sans-serif;color:#2B211B;background:#F5EFE6;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;background:#F5EFE6}
+body{margin:0;min-width:320px;overflow-x:hidden;background:#F5EFE6}
+button,a{-webkit-tap-highlight-color:transparent}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid #B28B4A;outline-offset:3px}
+::selection{background:#B28B4A;color:#2B211B}
+.noise{background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}
+.section-rule{height:1px;background:linear-gradient(90deg,transparent,rgba(43,33,27,.14),transparent)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
