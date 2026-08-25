@@ -1,5 +1,0 @@
-mongodb+srv://admin_creme_cafe:Admin_cremecafe@strong!@creme-cafe-db.aw3mbh9.mongodb.net/?appName=creme-cafe-db
-
-CLOUDINARY_CLOUD_NAME = mmxdt8k2
-CLOUDINARY_API_KEY = 122661124659228
-CLOUDINARY_API_SECRET = HBK_VmNm6VNNyou4nwvk_nCeXpw
